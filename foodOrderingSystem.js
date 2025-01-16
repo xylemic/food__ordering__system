@@ -95,30 +95,6 @@ class Order {
   }
 }
 
-// demonstration
-// create a restaurant
-const restaurant = new Restaurant('Tasty Bites', '123 yaba road');
-
-// add menu items
-const burger = new MenuItem('Burger', 750.55);
-const pizza = new MenuItem('Pizza', 550.99);
-restaurant.addMenuItem(burger);
-restaurant.addMenuItem(pizza);
-
-// create a customer
-const customer = new Customer('amaka', 'amaka@example.com');
-
-// view restaurant's menu
-restaurant.getMenu();
-
-// place an order
-const order = new Order(customer, restaurant, [burger, pizza]);
-customer.placeOrder(order);
-restaurant.receiveOrder(order);
-
-// update order status
-order.updateStatus('Completed');
-
 // display customer and restaurant information
 console.log(`Customer Name: ${customer.name}`);
 console.log(`Customer Email: ${customer.contactInfo}`);
@@ -135,18 +111,4 @@ customer.orders.forEach(order => {
   order.items.forEach(item => console.log(`    - ${item.name}: ₦${item.price}`));
 });
 
-console.log('----------------------');
-
-// // view customer order history
-// console.log(`${customer.name}'s order history:`);
-// customer.orders.forEach(order => {
-//   console.log(`- Order ID: ${order.orderId}`);
-//   console.log(`  Status: ${order.status}`);
-//   console.log(`  Total Amount: ₦${order.totalAmount}`);
-//   console.log(`  Items:`);
-//   order.items.forEach(item => console.log(`    - ${item.name}: ₦${item.price}`));
-// });
-
-// view customer's order history
-restaurant.getCustomerOrderHistory(customer.customerId);
 
