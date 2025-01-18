@@ -3,6 +3,9 @@
 ## Problem Domain Description
 This repository contains an implementation of an Online Food Ordering System in JavaScript. The project demonstrates object-oriented programming concepts by modeling a real-world food ordering scenario where customers can place an orders at restaurants, view menus, and manage orders. The system is implemented as a console-based application and includes functionality for customers, restaurants, menu items, and orders.
 
+Additionally, this repository includes a folder named 'images', which contains the UML class diagram for the system.
+
+
 ## Features
 
 ### Classes and Their Functionalities
