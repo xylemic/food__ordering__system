@@ -95,20 +95,5 @@ class Order {
   }
 }
 
-// display customer and restaurant information
-console.log(`Customer Name: ${customer.name}`);
-console.log(`Customer Email: ${customer.contactInfo}`);
-console.log(`Restaurant Name: ${restaurant.name}`);
-console.log(`Restaurant Address: ${restaurant.address}`);
-
-// view customer's orders
-console.log(`${customer.name}'s orders:`);
-customer.orders.forEach(order => {
-  console.log(`- Order ID: ${order.orderId}`);
-  console.log(`  Status: ${order.status}`);
-  console.log(`  Total Amount: ₦${order.totalAmount}`);
-  console.log(`  Items:`);
-  order.items.forEach(item => console.log(`    - ${item.name}: ₦${item.price}`));
-});
 
 
